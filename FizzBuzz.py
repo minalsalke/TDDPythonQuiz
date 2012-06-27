@@ -1,7 +1,7 @@
 """
 Q1. Why is the report method untestable ? [2 pts]
 
-
+External collaborator
 
 
 Q2. How will you change the api of the report method to make it more testable ? [2 pts]
