@@ -1,10 +1,12 @@
 """
 Q1. Why is the report method untestable ? [2 pts]
 
-External collaborator directly file pointer is given.instead wrapper func should be used - FileHandleWrapper 
+External collaborator directly file pointer is given.instead wrapper func should be used - FileHandleWrapper or pass an arg as fileopener.
 
 
 Q2. How will you change the api of the report method to make it more testable ? [2 pts]
+
+
 as mentioned above.changes done in below code :
 
 
