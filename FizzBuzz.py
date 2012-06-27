@@ -1,18 +1,19 @@
 """
 Q1. Why is the report method untestable ? [2 pts]
 
-External collaborator
+External collaborator directly file pointer is given.instead wrapper func should be used - FileHandleWrapper 
 
 
 Q2. How will you change the api of the report method to make it more testable ? [2 pts]
-
+as mentioned above.changes done in below code :
 
 
 """
 class FizzBuzz(object):
-    def report(self, numbers):
+    def report(self, numbers, FileOpener):
+        FileOpener.Open()
 
-        report_file = open('c:/temp/fizzbuzz_report.txt', 'w')
+        report_file = FileOpener('c:/temp/fizzbuzz_report.txt', 'w')
 
         for number in numbers:
             msg = str(number) + " "
